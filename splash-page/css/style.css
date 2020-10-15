@@ -17,6 +17,7 @@
     --sub-font:'sansita swashed', sans-serif;
     --color: #93D5AE;
     --top-position:35%;
+    --background-color:#fff;
     font-size:16px;
 } 
 
@@ -27,7 +28,11 @@ body {
         padding:0;
         box-sizing: border-box;
         color:#fff;
-        background-color:var(--background-color);
+        background-color: var(--background-color);
+        background-image: url((https://i.picsum.photos/id/1080/6858/4574.jpg?hmac=qMYBjROs2Wu589QQXRAYsxDJu4ZuRQ4PKDpb3x_Oouw);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
 }
 
 .social-media {
@@ -99,7 +104,7 @@ body {
         100% 100%,
         0 calc(100% - 8vw)
         );
-        top:calc(var(--top-position) - 17%);
+        top:calc(var(--top-position) - 20%);
     }
     
      body {
