@@ -15,7 +15,7 @@
 :root {
     --main-font:'montserrat', serif;
     --sub-font:'sansita swashed', sans-serif;
-    --color: #fff;
+    --color: #93D5AE;
     --top-position:35%;
     font-size:16px;
 } 
@@ -26,7 +26,7 @@ body {
         margin:0;
         padding:0;
         box-sizing: border-box;
-        color:var(--color);
+        color:#fff;
         background-color:var(--background-color);
 }
 
@@ -139,7 +139,7 @@ body {
     .main-heading p {
      font-size:3rem;
      margin-top:0;
-     color:#93D5AE;
+     color:var(--color);
     }
     
      body {
@@ -168,7 +168,7 @@ body {
     }
     
     .main-heading p {
-        color:#93D5AE;
+        color:var(--color);
         font-size:4rem;
     }
     
