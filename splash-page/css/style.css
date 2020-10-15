@@ -16,7 +16,6 @@
     --main-font:'montserrat', serif;
     --sub-font:'sansita swashed', sans-serif;
     --color: #fff;
-    --background-color:rgb(200, 200, 200);
     --top-position:35%;
     font-size:16px;
 } 
@@ -31,16 +30,16 @@ body {
         background-color:var(--background-color);
 }
 
-.social-media-links {
+.social-media {
     padding:2%;
     text-align: right;
 }
 
-.social-media-links a {
+.social-media a {
     text-decoration: none;
 }
 
-.social-media-links img {
+.social-media img {
     width:100%;
     max-width:30px;
     margin:0 .5%;
@@ -88,7 +87,7 @@ body {
     margin-top:0;
 }
 
-@media (min-width:600px) {
+@media (min-width:500px) {
     .social-media-links img {
         max-width:40px;
     }
@@ -103,9 +102,25 @@ body {
         top:calc(var(--top-position) - 17%);
     }
     
+     body {
+        background-image: url(https://i.picsum.photos/id/1080/6858/4574.jpg?hmac=qMYBjROs2Wu589QQXRAYsxDJu4ZuRQ4PKDpb3x_Oouw);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .main-heading h1 a {
+        font-size:7rem;
+        color:#77da9b;
+    }
+    
+    .main-heading p {
+     font-size:2rem;
+     margin-top:0;
+     color: rgba(255, 255, 255, .8)
+    }
 }
 
-@media (min-width:800px) {
+@media (min-width:750px) {
     .main-heading {
         clip-path: polygon(
         0 0,
@@ -122,8 +137,15 @@ body {
     }
     
     .main-heading p {
-     font-size:4rem;
+     font-size:3rem;
      margin-top:0;
+     color:#93D5AE;
+    }
+    
+     body {
+        background-image: url(https://i.picsum.photos/id/1080/6858/4574.jpg?hmac=qMYBjROs2Wu589QQXRAYsxDJu4ZuRQ4PKDpb3x_Oouw);
+        background-repeat: no-repeat;
+        background-position: center;
     }
     
 }
@@ -139,6 +161,20 @@ body {
         top:calc(var(--top-position) - 13%);
     }
     
+     body {
+        background-image: url(https://i.picsum.photos/id/1080/6858/4574.jpg?hmac=qMYBjROs2Wu589QQXRAYsxDJu4ZuRQ4PKDpb3x_Oouw);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .main-heading p {
+        color:#93D5AE;
+        font-size:4rem;
+    }
+    
+    .letter-box {
+    color:rgba(194, 86, 108, 0.8);
+}
 }
 
 @media (min-width:1200px) {
@@ -158,7 +194,7 @@ body {
     
     .main-heading h1 a {
         font-size:13rem;
-        color:#fff;
+        color:rgba(255, 255, 255, 0.7);
     }
     
     .main-heading h1 a:hover {
@@ -166,7 +202,7 @@ body {
     }
     
     .main-heading p {
-        color:#93D5AE;
+        color:rgba(69, 247, 194, 0.5);
         font-size:4rem;
     }
 }
