@@ -36,11 +36,10 @@ body {
 }
 
 .hard-work {
-    
-    clip-path:circle(30% at 23% );
-   
-   
-    
+    clip-path:circle(20% at 20% 70%);
+    position: relative;
+    top:50%;
+    left:50%;
 }
 
 .social-media {
@@ -71,7 +70,6 @@ body {
     padding:12rem 0;
     text-align: center;
 }
-
 .main-heading h1 {
     margin-bottom:0;
 }
