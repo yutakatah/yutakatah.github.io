@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color:#EEE;
+}
+
+.header {
+    margin:0;
+}
+
+.strawberry-logo {
+    margin:0;
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.strawberry-logo img {
+    display:block;
+    margin:0 auto;
+    width:100%;
+    height: 100%;
+}
+
+
+@media (min-width:600px) {
+    
+    .strawberry-logo img {
+        border:2px solid #E57A7A;
+}
+
+@media (min-width:1200px) {
+    
+    .strawberry-logo img {
+        border:2px solid #84EB89;
+    }
+}
