@@ -15,8 +15,9 @@
 :root {
     --main-font:'montserrat', serif;
     --sub-font:'sansita swashed', sans-serif;
-    --color: #fff;
+    --color: #93D5AE;
     --top-position:35%;
+    --background-color:#fff;
     font-size:16px;
 } 
 
@@ -26,31 +27,39 @@ body {
         margin:0;
         padding:0;
         box-sizing: border-box;
-        color:var(--color);
-        background-color:var(--background-color);
+        color:#fff;
+        background-color: var(--background-color);
+        background-image: url((https://i.picsum.photos/id/1080/6858/4574.jpg?hmac=qMYBjROs2Wu589QQXRAYsxDJu4ZuRQ4PKDpb3x_Oouw);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+}
+
+.hard-work {
+    clip-path:circle(20% at 20% 70%);
+    position: relative;
+    top:50%;
+    left:50%;
 }
 
 .social-media {
     padding:2%;
-    text-align: right;
+    text-align:right;
 }
 
 .social-media a {
-    text-decoration: none;
+    text-decoration:none;
 }
 
 .social-media img {
     width:100%;
     max-width:30px;
-    margin:0 .5%;
+    margin:3%;
 }
 
 .main-heading {
     position:absolute;
     width:100%;
-    background-image: url(https://i.picsum.photos/id/1080/6858/4574.jpg?hmac=qMYBjROs2Wu589QQXRAYsxDJu4ZuRQ4PKDpb3x_Oouw) no-repeat;
-    background-repeat: no-repeat;
-    background-position: center;
     clip-path: polygon(
     0 0,
     100% 0,
@@ -61,7 +70,6 @@ body {
     padding:12rem 0;
     text-align: center;
 }
-
 .main-heading h1 {
     margin-bottom:0;
 }
@@ -99,7 +107,7 @@ body {
         100% 100%,
         0 calc(100% - 8vw)
         );
-        top:calc(var(--top-position) - 17%);
+        top:calc(var(--top-position) - 20%);
     }
     
      body {
@@ -139,7 +147,7 @@ body {
     .main-heading p {
      font-size:3rem;
      margin-top:0;
-     color:#93D5AE;
+     color:var(--color);
     }
     
      body {
@@ -148,6 +156,11 @@ body {
         background-position: center;
     }
     
+    .social-media img {
+    width:100%;
+    max-width:20px;
+    margin:2%;
+}
 }
 
 @media (min-width:1000px) {
@@ -168,7 +181,7 @@ body {
     }
     
     .main-heading p {
-        color:#93D5AE;
+        color:var(--color);
         font-size:4rem;
     }
     
