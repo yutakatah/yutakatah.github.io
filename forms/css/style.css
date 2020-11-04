@@ -24,12 +24,8 @@ body {
 }
 
 .strawberry-logo {
-    margin:0;
-    top:0;
-    left:0;
     height:100%;
     width:100%;
-    display:;
     align-items: center;
     justify-content: center;
 }
@@ -61,8 +57,8 @@ body {
 }
 
 .social-media {
-    padding:2%;
-    text-align:right;
+    padding:1%;
+    text-align: center;
 }
 
 .social-media a {
@@ -72,25 +68,18 @@ body {
 .social-media img {
     width:100%;
     max-width:70px;
-    margin:3%;
+    margin:1%;
 }
 
 .main-heading {
-
-    width:100%;
-    clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    0 calc(100% - 6vw)
-    );
+ 　　width:100%;
     top:calc(var(--top-position) - 20%);
-    padding:12rem 0;
+    padding:2rem 0;
     text-align: center;
 }
 
 .main-heading p {
-    font-size:3rem;
+    font-size:5rem;
     color:#87B2A9;
     margin-top:0;
     font-family:var(--cute-font);
@@ -100,40 +89,17 @@ body {
     bottom:0;
     text-align:center;
     width:100%;
-    margin:-35% 0 0 0;
+    margin:10% 0 0 0;
 }
     
 .footer-nav a {
-    display:block;
+    
     padding:1% 2%;
     font-size:1.5rem;
     font-family: var(--sub-font);
     color: antiquewhite;
-    text-decoration: none;
-    
+    text-decoration: none;   
 } 
-
-
-.text {
-    display:flex;
-    height:auto;
-    justify-content: center;
-    align-items: center;
-    position:relative;
-    overflow:auto;
-    top:30%;
-}
-
-.text a {
-    font-size:3rem;
-    font-family: var(--sub-font);
-    background-color:var(--background-color);
-    width:100%;
-    padding:5% 0;
-    text-align: center;
-    text-decoration: none;
-    color:darkred;
-}
 
 .copyright {
     margin-top:5rem;
@@ -153,6 +119,74 @@ body {
     font-family: var(--other-font);
     color: cadetblue;
 }
+
+.contact-box {
+    margin-bottom:50%;
+    max-width:800px;
+}
+
+fieldset {
+    border:none;
+    font-family: var(--sub-font);
+    
+}
+
+.contact-form textarea {
+    min-height:8rem;
+    
+}
+
+.contact-box input[type=text],
+.contact-box input[type=email],
+.contact-box textarea {
+  width: 100%;
+  padding: .75rem;
+  border: 5px solid;
+  border-color: var(--color);
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  resize: vertical;
+    
+  
+}
+
+.contact-box input[type=checkbox] {
+    
+    
+}
+
+.contact-box input[type=submit] {
+    background-color:var(--color);
+    
+}
+
+.contact-box input[type=reset] {
+  color:var(--color);
+  padding: .8rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contact-box input[type=submit] {
+  color: #FFF;
+  padding: .8rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+  background-color: #333;
+}
+
+.contact-box {
+  border-radius: 5px;
+  padding: 1.25rem;
+} 
 
 @media (min-width:500px) {
     .social-media-links img {
