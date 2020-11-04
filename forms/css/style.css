@@ -29,7 +29,7 @@ body {
     left:0;
     height:100%;
     width:100%;
-    display:flex;
+    display:;
     align-items: center;
     justify-content: center;
 }
@@ -53,16 +53,11 @@ body {
         background-position: center;
 }
 
-.hard-work {
-    clip-path:circle(20% at 20% 70%);
-    top:50%;
-    left:50%;
-}
-
 .shopping img{
-    width: 64px;
-    height: 64px;
+    width: 50%;
+    height: 50%x;
     margin-top: 50px;
+    max-width: 200px;
 }
 
 .social-media {
@@ -76,7 +71,7 @@ body {
 
 .social-media img {
     width:100%;
-    max-width:30px;
+    max-width:70px;
     margin:3%;
 }
 
@@ -118,57 +113,6 @@ body {
     
 } 
 
-.images {
-    margin-top:70px;
-    width:100%;
-    display:inline-flex;
-    grid-template-columns:1fr;
-    grid-gap:0rem;
-    filter:drop-shadow(.5rem .5rem 1rem #333);
-}
-
-.imageslist {
-    margin:auto;
-    position: relative;
-    width:100%;
-    background-color:transparent;
-}
-
-.imageslist > figure {
-    margin:0;
-    width:100%;
-}
-
-.imageslist > figure > img {
-    width:100%;
-    clip-path: inset(5% 0 5% 0);
-}
-
-
-.item-1,
-.item-2,
-.item-3,
-.item-4{
-    margin-top:-10%;
-}
-         
-.overlay {
-    position: absolute;
-    top:0;
-    left:0;
-    height: 100%;
-    width:100%;
-    opacity:0;
-    transition:.75s ease;
-    clip-path: inset(5% 0 5% 0);
-
-}
-
-.imageslist:hover .overlay,
-.imageslist:active .overlay {
-  opacity:.5;
-    transition:1s ease;
-}
 
 .text {
     display:flex;
@@ -238,17 +182,9 @@ body {
     }
     
     .strawberry-logo img {
-        border:2px solid #E57A7A;
+       
 }
 
-     .images {
-    margin-top:70px;
-    width:100%;
-    display:inline-table;
-    grid-template-columns:1fr;
-    grid-gap:0rem;
-    filter:drop-shadow(.5rem .5rem 1rem #333);
-}
     
 }
 
@@ -277,7 +213,7 @@ body {
     
     .social-media img {
     width:100%;
-    max-width:20px;
+    max-width:90px;
     margin:2%;
 }
     
@@ -297,14 +233,6 @@ body {
         font-size:4rem;
     }
     
-     .images {
-    margin-top:70px;
-    width:100%;
-    display:inline-flex;
-    grid-template-columns:1fr;
-    grid-gap:0rem;
-    filter:drop-shadow(.5rem .5rem 1rem #333);
-}
 }
 
 @media (min-width:1200px) {
@@ -328,6 +256,6 @@ body {
     }
     
     .strawberry-logo img {
-        border:2px solid #84EB89;
+        
     }
 }
