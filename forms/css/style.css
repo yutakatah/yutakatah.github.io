@@ -43,10 +43,10 @@ body {
         box-sizing: border-box;
         color:#fff;
         background-color: var(--background-color);
-        background-image: url((https://i.picsum.photos/id/1080/6858/4574.jpg?hmac=qMYBjROs2Wu589QQXRAYsxDJu4ZuRQ4PKDpb3x_Oouw);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
+        background-color: #EAB8AB
 }
 
 .shopping img{
@@ -83,26 +83,28 @@ body {
     color:#87B2A9;
     margin-top:0;
     font-family:var(--cute-font);
+    
 }
 
 .page-footer {
     bottom:0;
     text-align:center;
     width:100%;
-    margin:10% 0 0 0;
+    margin:0 0 0 0;
 }
     
 .footer-nav a {
-    
-    padding:1% 2%;
-    font-size:1.5rem;
+    padding:5%;
+    font-size:2.5rem;
     font-family: var(--sub-font);
     color: antiquewhite;
-    text-decoration: none;   
+    text-decoration: none;
+    margin-top: 9px;
+    
 } 
 
 .copyright {
-    margin-top:5rem;
+    margin-top:2rem;
     margin-bottom:0;
     font-family: var(--other-font);
     color:cadetblue;
@@ -121,8 +123,12 @@ body {
 }
 
 .contact-box {
-    margin-bottom:50%;
+    margin-bottom:5%;
     max-width:800px;
+    border-radius: 1px;
+    padding: .1rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 fieldset {
@@ -149,7 +155,6 @@ fieldset {
   margin-bottom: 1rem;
   resize: vertical;
     
-  
 }
 
 .contact-box input[type=checkbox] {
@@ -183,10 +188,9 @@ input[type=reset]:hover {
   background-color: #333;
 }
 
-.contact-box {
-  border-radius: 5px;
-  padding: 1.25rem;
-} 
+.privacy a {
+    color:#F85470;
+}
 
 @media (min-width:500px) {
     .social-media-links img {
@@ -204,7 +208,7 @@ input[type=reset]:hover {
     }
     
      body {
-        background-image: url(https://i.picsum.photos/id/1080/6858/4574.jpg?hmac=qMYBjROs2Wu589QQXRAYsxDJu4ZuRQ4PKDpb3x_Oouw);
+        background-color: #EAB8AB;
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -212,17 +216,29 @@ input[type=reset]:hover {
     .main-heading p {
      font-size:2rem;
      margin-top:0;
-     color: rgba(255, 255, 255, .8)
+     color: rgba(255, 255, 255, .8);
+     font-family:var(--cute-font);
+     margin-bottom: 1rem;
     }
     
-    .strawberry-logo img {
-       
+    
+   .strawberry-logo img {
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    .shopping img{
+    width: 50%;
+    height: 50%x;
+    margin-top: 50px;
+    max-width: 70px;
 }
 
     
 }
 
 @media (min-width:750px) {
+    
     .main-heading {
         clip-path: polygon(
         0 0,
@@ -237,10 +253,12 @@ input[type=reset]:hover {
      font-size:3rem;
      margin-top:0;
      color:var(--color);
+     font-family:var(--cute-font);
+     margin-bottom: 1rem;
     }
     
      body {
-        background-image: url(https://i.picsum.photos/id/1080/6858/4574.jpg?hmac=qMYBjROs2Wu589QQXRAYsxDJu4ZuRQ4PKDpb3x_Oouw);
+        background-color: #EAB8AB;
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -251,13 +269,25 @@ input[type=reset]:hover {
     margin:2%;
 }
     
+    .strawberry-logo img {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .shopping img{
+    width: 50%;
+    height: 50%x;
+    margin-top: 50px;
+    max-width: 100px;
+}
+    
     
 }
 
 @media (min-width:1000px) {
     
      body {
-        background-image: url(https://i.picsum.photos/id/1080/6858/4574.jpg?hmac=qMYBjROs2Wu589QQXRAYsxDJu4ZuRQ4PKDpb3x_Oouw);
+        background-color: #EAB8AB;
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -265,14 +295,29 @@ input[type=reset]:hover {
     .main-heading p {
         color:var(--color);
         font-size:4rem;
+        margin-top:0;
+        font-family:var(--cute-font);
+        margin-bottom: 1rem;
     }
     
+    .strawberry-logo img {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .shopping img{
+    width: 50%;
+    height: 50%x;
+    margin-top: 50px;
+    max-width: 150px;
+}
+
 }
 
 @media (min-width:1200px) {
     
     body {
-        background-image: url(https://i.picsum.photos/id/1080/6858/4574.jpg?hmac=qMYBjROs2Wu589QQXRAYsxDJu4ZuRQ4PKDpb3x_Oouw);
+        background-color: #EAB8AB;
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -287,9 +332,21 @@ input[type=reset]:hover {
     .main-heading p {
         color:rgba(69, 247, 194, 0.5);
         font-size:4rem;
+        margin-top:0;
+        font-family:var(--cute-font);
+        margin-bottom: 1rem;
     }
     
     .strawberry-logo img {
-        
+        width: 100%;
+        max-width: 550px;
     }
+    
+    .shopping img{
+    width: 50%;
+    height: 50%x;
+    margin-top: 50px;
+    max-width: 180px;
+}
+    
 }
