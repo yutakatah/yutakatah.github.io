@@ -226,7 +226,6 @@ body {
     }
     
      body {
-        background-image: url(https://i.picsum.photos/id/1080/6858/4574.jpg?hmac=qMYBjROs2Wu589QQXRAYsxDJu4ZuRQ4PKDpb3x_Oouw);
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -270,7 +269,6 @@ body {
     }
     
      body {
-        background-image: url(https://i.picsum.photos/id/1080/6858/4574.jpg?hmac=qMYBjROs2Wu589QQXRAYsxDJu4ZuRQ4PKDpb3x_Oouw);
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -287,7 +285,6 @@ body {
 @media (min-width:1000px) {
     
      body {
-        background-image: url(https://i.picsum.photos/id/1080/6858/4574.jpg?hmac=qMYBjROs2Wu589QQXRAYsxDJu4ZuRQ4PKDpb3x_Oouw);
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -308,9 +305,6 @@ body {
 }
 
 @media (min-width:1200px) {
-    
-    body {
-        background-image: url(https://i.picsum.photos/id/1080/6858/4574.jpg?hmac=qMYBjROs2Wu589QQXRAYsxDJu4ZuRQ4PKDpb3x_Oouw);
         background-repeat: no-repeat;
         background-position: center;
     }
