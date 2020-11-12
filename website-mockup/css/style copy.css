@@ -24,33 +24,6 @@ body {
 
 .header {
     margin:0;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 10px;
-    padding: 10px;
-    
-}
-
-
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
-
-.shopping {
-  grid-area:1 / 1 / 2 / 2;
-}
-.search-bar {
-  grid-area:1 / 2 / 2 / 4;
-}
-
-.strawberry-logo {
-  grid-area:2 / 1 / 3 / 4;
-}
-.text {
-  grid-area:3 / 1 / 4 / 4;
 }
 
 .strawberry-logo {
@@ -82,6 +55,8 @@ body {
 .shopping img{
     width: 50%;
     height: 50%x;
+    margin-top: 50px;
+    max-width: 200px;
 }
 
 .social-media {
@@ -100,19 +75,18 @@ body {
 }
 
 
-.text {
+.main-heading {
+ 　　width:100%;
+    top:calc(var(--top-position) - 20%);
+    padding:2rem 0;
+    text-align: center;
+}
+
+.main-heading p {
     font-size:5rem;
     color:#87B2A9;
     margin-top:0;
     font-family:var(--cute-font);
-    font-size: 3rem;
-    display:flex;
-    height:auto;
-    justify-content: center;
-    align-items: center;
-    position:relative;
-    overflow:auto;
-    top:20%;
     
 }
 
@@ -222,34 +196,32 @@ input[type=reset]:hover {
     color:#F85470;
 }
 
-.main-heading p{
-    
-    text-align: center;
-}
-
 
 /* home.html */
 
 .images {
-    margin-top:30px;
+    margin-top:50px;
     width:100%;
+    display:inline-flex;
+    grid-template-columns:1fr;
+    grid-gap:0rem;
     filter:drop-shadow(.0rem .0rem .1rem #333);
 }
 
 .imageslist {
+    margin:auto;
     position: relative;
     width:100%;
     background-color:transparent;
 }
 
 .imageslist > figure {
-    margin:0 auto;
-    width:50%;
+    margin:0;
+    width:100%;
 }
 
 .imageslist > figure > img {
     width:100%;
-    
 }
 
 
@@ -257,8 +229,7 @@ input[type=reset]:hover {
 .item-2,
 .item-3,
 .item-4{
-    margin-top:-1%;
-    margin-bottom:0;
+    margin-top:1%;
 }
 
          
@@ -266,7 +237,7 @@ input[type=reset]:hover {
     position: absolute;
     top:0;
     left:0;
-    height:50%;
+    height: 100%;
     width:100%;
     opacity:0;
     transition:.5s ease;
@@ -279,17 +250,17 @@ input[type=reset]:hover {
     transition:.5s ease;
 }
 
-.hover-text {
+.text {
     display:flex;
     height:auto;
     justify-content: center;
     align-items: center;
     position:relative;
     overflow:auto;
-    top:-18%;
+    top:20%;
 }
 
-.hover-text a {
+.text a {
     font-size:3rem;
     font-family: var(--sub-font);
     background-color:var(--background-color);
@@ -304,17 +275,24 @@ input[type=reset]:hover {
 .search-icon{
     width: 20%;
     height: 80%;
+    margin-top: .3rem;
+    margin-right: -2rem;
 }
 
 .search-bar {
     height:3rem;
     display:block;
-    border:3px solid;
+    border:5px solid;
     border-radius:100px;
     border-color:var(--color);
     display:flex;
     padding:.2rem;
-    width: 100%;
+    max-width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-bottom: 5%;
 }
 
 .search-box {
@@ -324,16 +302,20 @@ input[type=reset]:hover {
     width:100%;
 }
 
+.search-box input[placeholder=what would you like to know?] {
+   font: var(--cute-font);
+}
+
 .search-bar:focus-within .search-box::placeholder {
     color:transparent;
     border:none;
 }
 
 
-/*responsive-starts*/
 
 
-@media (min-width:600px) {
+
+@media (min-width:500px) {
     .social-media-links img {
         max-width:40px;
     }
@@ -365,13 +347,16 @@ input[type=reset]:hover {
     .shopping img{
     width: 50%;
     height: 50%x;
-    
+    margin-top: 50px;
+    max-width: 70px;
 }
 
     .search-icon{
     width: 15%;
     height: 70%;
     margin-top: .3rem;
+    margin-right: -2rem;
+    margin-left: -28%;
 }
     
 }
@@ -410,13 +395,8 @@ input[type=reset]:hover {
     .shopping img{
     width: 50%;
     height: 50%x;
-
-}
-    
-    .search-icon{
-    width: 15%;
-    height: 70%;
-    margin-top: .3rem;
+    margin-top: 50px;
+    max-width: 100px;
 }
     
     
@@ -446,13 +426,8 @@ input[type=reset]:hover {
     .shopping img{
     width: 50%;
     height: 50%x;
-}
-    
-    .search-icon{
-    width: 15%;
-    height: 70%;
-    margin-top: .3rem;
-    margin-right: -2rem;
+    margin-top: 50px;
+    max-width: 150px;
 }
 
 }
@@ -487,15 +462,16 @@ input[type=reset]:hover {
     
     .shopping img{
     width: 50%;
-    height: 50%;
-   
+    height: 50%x;
+    margin-top: 50px;
+    max-width: 180px;
 }
     
     .search-icon{
-    width: 15%;
-    height: 70%;
+    width: 20%;
+    height: 80%;
     margin-top: .3rem;
-    margin-right: -2.5rem;
+    margin-right: -2rem;
 }
     
 }
