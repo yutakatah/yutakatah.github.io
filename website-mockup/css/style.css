@@ -10,7 +10,7 @@
     --cute-font:Grandstander, cursive;
     --sub-font:'Sansita Swashed', sans-serif;
     --other-font: Nunito, sans-serif;
-    --color: #93D5AE;
+    --color: #87B2A9;
     --top-position:35%;
     --background-color:#fff;
     font-size:16px;
@@ -125,7 +125,7 @@ body {
     
 .footer-nav a {
     padding:5%;
-    font-size:2.5rem;
+    font-size:1.5rem;
     font-family: var(--sub-font);
     color: antiquewhite;
     text-decoration: none;
@@ -164,6 +164,7 @@ body {
 fieldset {
     border:none;
     font-family: var(--sub-font);
+    font-size: 1.3rem;
     
 }
 
@@ -232,19 +233,21 @@ input[type=reset]:hover {
 
 .images {
     margin-top:30px;
+    margin-bottom: 30px;
     width:100%;
     filter:drop-shadow(.0rem .0rem .1rem #333);
 }
 
 .imageslist {
     position: relative;
-    width:100%;
+    width:90%;
     background-color:transparent;
+    margin:0 auto;
 }
 
 .imageslist > figure {
     margin:0 auto;
-    width:50%;
+    width:100%;
 }
 
 .imageslist > figure > img {
@@ -264,9 +267,9 @@ input[type=reset]:hover {
          
 .overlay {
     position: absolute;
-    top:0;
+    top:115px;
     left:0;
-    height:50%;
+    height:100%;
     width:100%;
     opacity:0;
     transition:.5s ease;
@@ -275,7 +278,7 @@ input[type=reset]:hover {
 
 .imageslist:hover .overlay,
 .imageslist:active .overlay {
-    opacity:.7;
+    opacity:.85;
     transition:.5s ease;
 }
 
@@ -286,7 +289,7 @@ input[type=reset]:hover {
     align-items: center;
     position:relative;
     overflow:auto;
-    top:-18%;
+    top:-15%;
 }
 
 .hover-text a {
@@ -314,7 +317,7 @@ input[type=reset]:hover {
     border-color:var(--color);
     display:flex;
     padding:.2rem;
-    width: 100%;
+    width: 95%;
 }
 
 .search-box {
@@ -322,6 +325,8 @@ input[type=reset]:hover {
     background-color: transparent;
     outline:none;
     width:100%;
+    color: white;
+    font-family:var(--sub-font);
 }
 
 .search-bar:focus-within .search-box::placeholder {
@@ -374,6 +379,10 @@ input[type=reset]:hover {
     margin-top: .3rem;
 }
     
+    .overlay{
+        top:150px;
+    }
+    
 }
 
 @media (min-width:750px) {
@@ -388,6 +397,20 @@ input[type=reset]:hover {
      color:var(--color);
      font-family:var(--cute-font);
      margin-bottom: 1rem;
+    }
+    
+    .images {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+    
+    .imageslist{
+        width: 95%;
+        
+    }
+    
+    .overlay{
+        top:80px;
     }
     
      body {
@@ -417,6 +440,16 @@ input[type=reset]:hover {
     width: 15%;
     height: 70%;
     margin-top: .3rem;
+}
+    
+     .footer-nav a {
+    padding:5%;
+    font-size:2rem;
+    font-family: var(--sub-font);
+    color: antiquewhite;
+    text-decoration: none;
+    margin-top: 5px;
+
 }
     
     
@@ -454,8 +487,30 @@ input[type=reset]:hover {
     margin-top: .3rem;
     margin-right: -2rem;
 }
+    
+    .footer-nav a {
+    padding:5%;
+    font-size:3rem;
+    font-family: var(--sub-font);
+    color: antiquewhite;
+    text-decoration: none;
+    margin-top: 5px;
 
 }
+    
+    .images {
+    grid-template-columns:1fr 1fr 1fr 1fr;
+}
+    
+     .imageslist{
+        
+        width: 100%;
+        
+    }
+    
+    .overlay{
+        top:45px;
+    }
 
 @media (min-width:1200px) {
     
@@ -497,5 +552,19 @@ input[type=reset]:hover {
     margin-top: .3rem;
     margin-right: -2.5rem;
 }
+    
+     .footer-nav a {
+    padding:5%;
+    font-size:3rem;
+    font-family: var(--sub-font);
+    color: antiquewhite;
+    text-decoration: none;
+    margin-top: 5px;
+
+}
+    
+     .overlay{
+        top:80px;
+    }
     
 }
